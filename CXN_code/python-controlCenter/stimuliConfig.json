@@ -1,0 +1,195 @@
+{
+    "messageType": "STIMULI_CONFIGURATION",
+    "messageSource": "Some Application",
+    "data": {
+        "gyroMode": "DOF0",
+        "cameraMode": "mono",
+        "ccThreshold": 0.8,
+        "samplingRateHz": 2000,
+        "activeChannels": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+        "stimuli": [
+            {
+                    "stimuliId": 2,
+                    "frequency": 7,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 4,
+                    "shape": "CIRCLE",
+                    "label": "Stimuli 2",
+                    "position" : {
+                        "x" : 5,
+                        "y" : 5,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 1,
+                    "frequency": 7.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 4,
+                    "shape": "CIRCLE",
+                    "label": "Stimuli 1",
+                    "position" : {
+                        "x" : -5,
+                        "y" : 5,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 9,
+                    "frequency": 8,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 9",
+                    "position" : {
+                        "x" : 0,
+                        "y" : -10,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 10,
+                    "frequency": 8.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 10",
+                    "position" : {
+                        "x" : 5,
+                        "y" : -10,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 8,
+                    "frequency": 9,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 8",
+                    "position" : {
+                        "x" : -5,
+                        "y" : -10,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 11,
+                    "frequency": 9.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 11",
+                    "position" : {
+                        "x" : 10,
+                        "y" : -10,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 7,
+                    "frequency": 10,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 7",
+                    "position" : {
+                        "x" : -10,
+                        "y" : -10,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 12,
+                    "frequency": 10.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 12",
+                    "position" : {
+                        "x" : 15,
+                        "y" : -10,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 6,
+                    "frequency": 11,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 6",
+                    "position" : {
+                        "x" : -15,
+                        "y" : -10,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 4,
+                    "frequency": 11.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 4",
+                    "position" : {
+                        "x" : 0,
+                        "y" : -3,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 5,
+                    "frequency": 12,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 5",
+                    "position" : {
+                        "x" : 5,
+                        "y" : -3,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 3,
+                    "frequency": 12.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 3,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 3",
+                    "position" : {
+                        "x" : -5,
+                        "y" : -3,
+                        "z" : 50
+                    }
+                },
+				{
+                    "stimuliId": 0,
+                    "frequency": 13,
+                    "dutyCycle": 0.5,
+                    "classLabel": "test",
+                    "size": 4,
+                    "shape": "SQUARE",
+                    "label": "Stimuli 0",
+                    "position" : {
+                        "x" : 0,
+                        "y" : 10,
+                        "z" : 50
+                    }
+                }
+        ]
+    }
+}

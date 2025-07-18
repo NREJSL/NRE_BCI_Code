@@ -1,0 +1,184 @@
+{
+            "messageType": "STIMULI_CONFIGURATION",
+            "messageSource": "Some Application",
+            "data": {
+                "gyroMode": "DOF3",
+                "cameraMode": "STEREO",
+                "ccThreshold": 0.65,
+                "samplingRateHz": 500,
+                "activeChannels": [1,2,3,4,5,6],
+                "stimuli": [
+                {
+                        "stimuliId": 1,
+                        "frequency": 7,
+                        "dutyCycle": 0.5,
+                        "classLabel": "1",
+                        "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 1",
+                    "position": {
+                        "x": 7,
+                        "y": 9,
+                        "z": 60
+                    }
+                },
+                {
+                    "stimuliId": 2,
+                    "frequency": 7.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "2",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 2",
+                    "position": {
+                        "x": 15,
+                        "y": 9,
+                        "z": 60
+                    }
+                },
+                {
+                    "stimuliId": 3,
+                    "frequency": 8,
+                    "dutyCycle": 0.5,
+                    "classLabel": "3",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 3",
+                    "position": {
+                        "x": 15,
+                        "y": 0,
+                        "z": 60
+                    }
+                },
+                {
+                    "stimuliId": 4,
+                    "frequency": 8.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "4",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 4",
+                    "position" : {
+                        "x" : 15,
+                        "y" : -9,
+                        "z" : 60
+                    }
+                },
+                {
+                        "stimuliId": 5,
+                        "frequency": 9,
+                        "dutyCycle": 0.5,
+                        "classLabel": "5",
+                        "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 5",
+                    "position": {
+                        "x": 7,
+                        "y": -9,
+                        "z": 60
+                    }
+                },
+                {
+                    "stimuliId": 6,
+                    "frequency": 9.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "6",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 6",
+                    "position": {
+                        "x": 0,
+                        "y": -9,
+                        "z": 60
+                    }
+                },
+                {
+                    "stimuliId": 7,
+                    "frequency": 10,
+                    "dutyCycle": 0.5,
+                    "classLabel": "7",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 7",
+                    "position": {
+                        "x": -7,
+                        "y": -9,
+                        "z": 60
+                    }
+                },
+                {
+                    "stimuliId": 8,
+                    "frequency": 10.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "8",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 8",
+                    "position" : {
+                        "x" : -15,
+                        "y" : -9,
+                        "z" : 60
+                    }
+                },
+                {
+                    "stimuliId": 9,
+                    "frequency": 11,
+                    "dutyCycle": 0.5,
+                    "classLabel": "9",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 9",
+                    "position" : {
+                        "x" : -15,
+                        "y" : 0,
+                        "z" : 60
+                    }
+                },
+                {
+                    "stimuliId": 10,
+                    "frequency": 11.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "10",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 10",
+                    "position" : {
+                        "x" : -15,
+                        "y" : 9,
+                        "z" : 60
+                    }
+                },
+                {
+                    "stimuliId": 11,
+                    "frequency": 12,
+                    "dutyCycle": 0.5,
+                    "classLabel": "11",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 11",
+                    "position" : {
+                        "x" : -7,
+                        "y" : 9,
+                        "z" : 60
+                    }
+                },
+                {
+                    "stimuliId": 12,
+                    "frequency": 12.5,
+                    "dutyCycle": 0.5,
+                    "classLabel": "12",
+                    "size": 4,
+                    "shape":"CIRCLE",
+                    "label": "Target 12",
+                    "position" : {
+                        "x" : 0,
+                        "y" : 9,
+                        "z" : 60
+                    }
+                }
+                
+        
+                ]
+            }
+        }
+        

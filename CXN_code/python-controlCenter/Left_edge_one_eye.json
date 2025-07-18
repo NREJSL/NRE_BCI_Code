@@ -1,0 +1,28 @@
+{
+    "messageType": "STIMULI_CONFIGURATION",
+    "messageSource": "Some Application",
+    "data": {
+        "gyroMode": "DOF0",
+        "cameraMode": "STEREO",
+        "ccThreshold": 0.99,
+        "samplingRateHz": 250,
+        "activeChannels": [1,2,3,4,5,6],
+        "stimuli": [
+        {
+                "stimuliId": 1,
+                "frequency": 11.5,
+                "dutyCycle": 0.5,
+                "classLabel": "1",
+                "size": 4,
+            "shape": "CIRCLE",
+            "label": "Target 115",
+            "position": {
+                "x": -20,
+                "y": 0,
+                "z": 60
+            }
+        }
+
+        ]
+    }
+}

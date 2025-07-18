@@ -1,0 +1,77 @@
+
+#C:\Users\lijun\OneDrive\Desktop\Jun_code\LED_Glasses\.venv\Scripts\Activate.ps1
+
+
+import time
+from pylsl import StreamInlet, resolve_streams
+
+import serial
+import serial.tools.list_ports
+ports = serial.tools.list_ports.comports()
+
+for port, desc, hwid in sorted(ports):
+    print("{}: {} [{}]".format(port, desc, hwid))
+    print(port)
+    print(desc)
+    com_port=port
+try:
+    ser = serial.Serial(com_port, 115200,timeout=0)
+except Exception as e:
+            print("*****Arduino is not plugged in*****")
+            
+toggle = 0
+# Resolve the stream named 'NRE_ALAB'
+print("Looking for stream 'NRE_LAB'...")
+streams = resolve_streams()
+
+coord=[]
+
+if len(streams) == 0:
+    print("Stream 'NRE_LAB' not found.")
+else:
+    # Create an inlet to pull data from the stream
+    #print(StreamInlet(streams[0]))
+    for x in range(len(streams)):
+        print(streams[x].name())
+        if streams[x].name() == 'NRE_Lab_Neon Gaze':
+            inlet = StreamInlet(streams[x])
+            sample, timestamp = inlet.pull_sample()
+    ##print(f"Found stream 'NRE_ALAB'. Now receiving data...")
+
+    try:
+        
+        while True:
+            time.sleep(1)
+            print(sample)
+            coord.append(sample)
+            inlet.flush()
+            # Get the latest sample from the stream
+            ''''''
+            sample, timestamp = inlet.pull_sample()
+            #time.sleep(0.5)
+            print(sample)
+            if(sample[0]>1000 and sample[1]<900 and toggle == 1):
+                
+                ser.write('R'.encode('utf-8'))
+                print("R sent")
+            if(sample[0]<400 and sample[1]<900 and toggle == 1):
+                
+                ser.write('L'.encode('utf-8'))
+                print("L sent")
+            if(sample[0]<1000 and sample[0]>400 and sample[1]<900 and toggle == 1):
+                ser.write('F'.encode('utf-8'))
+                print("F sent")
+            if(sample[0]<1000 and sample[0]>400 and sample[1]>1000 and toggle == 0):
+                ser.write('S'.encode('utf-8'))
+                toggle = 1-toggle
+                print("S sent")
+            if(sample[0]<1000 and sample[0]>400 and sample[1]>1000):
+                ser.write('S'.encode('utf-8'))
+                print("S sent")
+            inlet.flush()
+            time.sleep(0.5)
+            ''''''
+           
+    except KeyboardInterrupt:
+        print(coord)
+        print("\nData collection stopped.")

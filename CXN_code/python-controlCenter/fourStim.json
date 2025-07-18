@@ -1,0 +1,70 @@
+{
+    "messageType": "STIMULI_CONFIGURATION",
+    "messageSource": "Some Application",
+    "data": {
+        "gyroMode": "DOF0",
+        "cameraMode": "STEREO",
+        "ccThreshold": 0.7,
+        "samplingRateHz": 250,
+        "activeChannels": [1,2,3,4,5,6],
+        "stimuli": [
+        {
+                "stimuliId": 1,
+                "frequency": 11.5,
+                "dutyCycle": 0.5,
+                "classLabel": "1",
+                "size": 4,
+            "shape": "CIRCLE",
+            "label": "Target L",
+            "position": {
+                "x": -7,
+                "y": 9,
+                "z": 60
+            }
+        },
+        {
+            "stimuliId": 2,
+            "frequency": 7.5,
+            "dutyCycle": 0.5,
+            "classLabel": "2",
+            "size": 4,
+            "shape": "CIRCLE",
+            "label": "Target F",
+            "position": {
+                "x": 7,
+                "y": 9,
+                "z": 60
+            }
+        },
+        {
+            "stimuliId": 3,
+            "frequency": 13,
+            "dutyCycle": 0.5,
+            "classLabel": "3",
+            "size": 4,
+            "shape": "CIRCLE",
+            "label": "Target R",
+            "position": {
+                "x": -7,
+                "y": -9,
+                "z": 60
+            }
+        },
+        {
+            "stimuliId": 4,
+            "frequency": 9,
+            "dutyCycle": 0.5,
+            "classLabel": "4",
+            "size": 4,
+            "shape": "CIRCLE",
+            "label": "Target Stop",
+            "position" : {
+                "x" : 7,
+                "y" : -9,
+                "z" : 60
+            }
+        }
+
+        ]
+    }
+}
