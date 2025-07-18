@@ -1,7 +1,7 @@
 # NRE_BCI_Code
 All wheelchair controller related code
 
-CXN code 
+CXN code \n
     Python BCI Game
     Python control center -- for starting the AR scene in headset
     Python Impedance      -- Use the bat CXN_impednace.bat to start impedance checking
